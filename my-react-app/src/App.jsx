@@ -1,13 +1,12 @@
-import Student from "./Student";
+// Conditional rendering
+
+import UserGreeting from "./UserGreeting";
 
 function App() {
   return (
     <>
-      <Student name="John Doe" age={30} isStudent={true} />
-      <Student name="Patrick Jane" age={25} isStudent={false} />
-      <Student name="Spongebob Squarepants" age={50} isStudent={true} />
-      <Student name="Sandy" age={27} isStudent={true} />
-      <Student/>
+      <UserGreeting isLoggedIn={true} username="John Doe" />
+      <UserGreeting isLoggedIn={true} />
     </>
   )
 }
