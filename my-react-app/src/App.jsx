@@ -1,29 +1,29 @@
-// Render lists
-import List from './List';
+import Button from "./Button";
 
-function App() {
-  const fruit = [
-        {id: 1, name: 'Apple', calories: 95}, 
-        {id: 2, name: 'Orange', calories: 62}, 
-        {id: 3, name: 'Banana', calories: 105}, 
-        {id: 4, name: 'Grapes', calories: 151}, 
-        {id: 5, name: 'Mango', calories: 203}
-    ];
-
-  const vegetable = [
-        {id: 1, name: 'Carrot', calories: 41},
-        {id: 2, name: 'Broccoli', calories: 55},
-        {id: 3, name: 'Spinach', calories: 23},
-        {id: 4, name: 'Potato', calories: 77},
-        {id: 5, name: 'Tomato', calories: 22}
-    ];
+const ButtonBold = (props) => {
+  // Destructuring props with default values
+  const {children = "Button", variant = "bg-slate-700"} = props;
 
   return (
-    <>
-      {fruit.length > 0 && <List items={fruit} category="Fruits" />}  
-      {vegetable.length > 0 && <List items={vegetable} category="Vegetables" />}
-    </>
+    <button 
+      className={`h-10 px-6 font-semibold rounded-md ${variant} text-white`} 
+      type="submit"
+    >
+      {children}
+    </button>
   )
+}
+
+function App() {
+  return (
+    <div className="flex justify-center bg-blue-600 min-h-screen items-center App">
+      <div className="flex gap-x-3">
+        <Button text="Login" />
+        <ButtonBold variant="bg-red-500">Buy now!</ButtonBold>
+        <ButtonBold/>
+      </div>
+    </div>
+  );
 }
 
 export default App;
