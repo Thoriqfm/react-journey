@@ -10,7 +10,7 @@ const AuthLayouts = (props) => {
           Welcome, Please enter your details
         </p>
         {children}
-        <p className="text-sm mt-5 text-center">
+        {/* <p className="text-sm mt-5 text-center">
           {type === "login"
             ? "Don't have an account? "
             : "Already have an account? "}
@@ -20,7 +20,7 @@ const AuthLayouts = (props) => {
           >
             {type === "login" ? "Register here" : "Log in"}
           </Link>
-        </p>
+        </p> */}
         <Navigation type={type} />
       </div>
     </div>
