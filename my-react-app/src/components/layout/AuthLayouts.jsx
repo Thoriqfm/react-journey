@@ -21,7 +21,7 @@ const AuthLayouts = (props) => {
             {type === "login" ? "Register here" : "Log in"}
           </Link>
         </p>
-        {/* <Navigation type={type} /> */}
+        <Navigation type={type} />
       </div>
     </div>
   );

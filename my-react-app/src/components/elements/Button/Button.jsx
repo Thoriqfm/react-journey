@@ -1,9 +1,9 @@
 export default function Button(props) {
-  const { children = "Button", clasname = "bg-slate-700" } = props;
+  const { children = "Button", classname = "bg-slate-700" } = props;
 
   return (
     <button
-      className={`h-10 px-6 font-semibold rounded-md ${clasname} text-white cursor-pointer hover:opacity-80 transition-opacity duration-300`}
+      className={`h-10 px-6 font-semibold rounded-md ${classname} text-white cursor-pointer hover:opacity-80 transition-opacity duration-300`}
       type="submit"
     >
       {children}
