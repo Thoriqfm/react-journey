@@ -1,13 +1,13 @@
 // import LoginPage from "./pages/login";
-import RegisterPage from "./pages/register";
+// import RegisterPage from "./pages/register";
 
-function App() {
-  return (
-    <div className="flex justify-center min-h-screen items-center App">
-      {/* <LoginPage /> */}
-      <RegisterPage />
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <div className="flex justify-center min-h-screen items-center App">
+//       <LoginPage />
+//       <RegisterPage />
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;

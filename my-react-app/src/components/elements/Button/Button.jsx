@@ -3,7 +3,7 @@ export default function Button(props) {
 
   return (
     <button
-      className={`h-10 px-6 font-semibold rounded-md ${clasname} text-white`}
+      className={`h-10 px-6 font-semibold rounded-md ${clasname} text-white cursor-pointer hover:opacity-80 transition-opacity duration-300`}
       type="submit"
     >
       {children}
