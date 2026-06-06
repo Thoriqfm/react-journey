@@ -10,7 +10,7 @@ export default function Button(props) {
     <button
       className={`h-10 px-6 font-semibold rounded-md ${classname} text-white cursor-pointer hover:opacity-80 transition-opacity duration-300`}
       type={type}
-      onClick={() => onClick()}
+      onClick={onClick}
     >
       {children}
     </button>
